@@ -1,0 +1,11 @@
+DirectoryIndex index.php
+Options +FollowSymlinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.css$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.js$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.manifest$
+RewriteRule . index.php [L]
+AddType text/cache-manifest .manifest
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json text/cache-manifest
+Header append Vary Accept-Encoding
+
