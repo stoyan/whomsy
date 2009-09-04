@@ -1,0 +1,84 @@
+html {
+    background: #eee;
+}
+body {
+    padding: 0 0 40px 0;
+    background: white;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    margin: 1em auto;
+    width: 970px;
+}
+#head {
+    background: #E7EDF0;
+    padding: 20px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    height: 30px;
+}
+h3 {
+    margin: 0;
+    float: left;
+    font-size: 32px;
+    padding-right: 10px;
+}
+h3 a {
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+a {
+    color: #224B7E;
+}
+form p {
+    margin: 0;
+}
+form {
+    float: left;
+    border: 1px solid #CBCCCE;
+    padding: 5px;
+    background: #EFF1F4;
+}
+#domain-input {
+    width: 300px;
+}
+.example {
+    color: #666;
+    font-style: italic;
+}
+#content {
+    padding: 10px 20px;
+}
+.success, pre {
+	white-space: pre;
+	font-family: monospace;
+	background: #FAFAFA;
+	border: 1px solid #EAEAEA;
+	padding: 10px;
+}
+.error {
+    color: red;
+}
+.avail {
+    background: #ffee00;
+}
+#foot ul {
+    list-style: disc inside;
+    padding: 0 0 0 15px;
+}
+#foot li {
+    float: left;
+    padding: 2px 5px;
+}
+.first {
+    list-style: none;
+}
+dt {
+    font-weight: bold;
+}

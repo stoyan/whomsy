@@ -1,0 +1,48 @@
+<h1>APIs</h1>
+
+<p>You can use this whois service programatically from your applications.</p>
+
+<h2>Make a request</h2>
+
+<p>To make a whois lookup for domain <code>example.org</code>, send a GET request to the following URL:</p>
+
+<pre>
+    http://whomsy.com/api/example.org
+</pre>
+
+<h2>Response parameters</h2>
+
+<p>The default response is in JSON format, but you have a choice between the JSON, XML and HTML. 
+   To set the output format use the ?output parameter, like so:
+</p>
+<pre>
+    http://whomsy.com/api/example.org?output=json // default
+    http://whomsy.com/api/example.org?output=xml
+    http://whomsy.com/api/example.org?output=html
+</pre>
+
+<p>An example JSON response is structured like:</p>
+
+<pre>
+    {
+        "domain":"example.org",
+        "type":"success",
+        "message":"information\nabout the\ndomain"
+    }
+</pre>
+
+<p>If the lookup failed, the "type" will say "error".</p>
+
+<h2>Callbacks</h2>
+
+<p>The JSON output also supports a callback function:</p>
+
+<pre>
+    http://whomsy.com/api/example.org?callback=myFunc
+</pre>
+
+<p>This will return a response like:</p>
+
+<pre>
+    myFunc({"domain":"example.org","type":"success","message":"..."})
+</pre>
